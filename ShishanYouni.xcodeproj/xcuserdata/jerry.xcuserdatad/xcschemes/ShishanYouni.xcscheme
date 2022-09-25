@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C4225E7128D0B99300AFA75D"
+               BuildableName = "&#x72ee;&#x5c71;&#x6709;&#x4f60;.app"
+               BlueprintName = "ShishanYouni"
+               ReferencedContainer = "container:ShishanYouni.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C4225E7128D0B99300AFA75D"
+            BuildableName = "&#x72ee;&#x5c71;&#x6709;&#x4f60;.app"
+            BlueprintName = "ShishanYouni"
+            ReferencedContainer = "container:ShishanYouni.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
