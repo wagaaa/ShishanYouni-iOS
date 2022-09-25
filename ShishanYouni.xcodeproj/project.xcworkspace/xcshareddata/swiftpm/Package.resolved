@@ -8,15 +8,6 @@
         "branch" : "main",
         "revision" : "807d859fb39ccaae2caf8ff60fb2ee1a5048f4ca"
       }
-    },
-    {
-      "identity" : "kvkcalendar",
-      "kind" : "remoteSourceControl",
-      "location" : "https://gitee.com/wagaaa/KVKCalendar.git",
-      "state" : {
-        "revision" : "093df34051267d58dc4b780dd527be21a5fe481f",
-        "version" : "0.6.9"
-      }
     }
   ],
   "version" : 2
