@@ -7,12 +7,15 @@
 
 import SwiftUI
 import ACarousel
+import Alamofire
 
 
 struct Item: Identifiable{
     let id = UUID()
     let image: Image
 }
+
+
 
 let roles = ["First","Second","Third"]
 
@@ -26,9 +29,8 @@ struct ACarouselView: View {
             item.image
                 .resizable()
                 .scaledToFill()
-                .frame(width:300,height:200)
-                .cornerRadius(30)
-            
+                .frame(width:366,height:182)
+                .cornerRadius(20)
         }
         .frame(height: 300)
     }

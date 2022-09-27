@@ -8,6 +8,33 @@
         "branch" : "main",
         "revision" : "807d859fb39ccaae2caf8ff60fb2ee1a5048f4ca"
       }
+    },
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "8dd85aee02e39dd280c75eef88ffdb86eed4b07b",
+        "version" : "5.6.2"
+      }
+    },
+    {
+      "identity" : "url-image-module",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftui-packages/url-image-module.git",
+      "state" : {
+        "revision" : "ad0cbd7119c94b8d81fad8713c4fc1f2d7afd181",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "wkview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rebeloper/WKView.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "16e1390b4ed59a82609462d85cd0670d5144f036"
+      }
     }
   ],
   "version" : 2

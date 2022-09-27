@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41BE0DC28E04B240077EFEA /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */; };
+		C41BE0DE28E04BC50077EFEA /* h5 in Resources */ = {isa = PBXBuildFile; fileRef = C41BE0DD28E04BC50077EFEA /* h5 */; };
 		C4225E7628D0B99300AFA75D /* ShishanYouniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */; };
 		C4225E7828D0B99300AFA75D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225E7728D0B99300AFA75D /* ContentView.swift */; };
 		C4225E7A28D0B99400AFA75D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4225E7928D0B99400AFA75D /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 		C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EBD28D18A9F00AFA75D /* AddGroupView.swift */; };
 		C43137EC28DCB802005288CB /* CalendarDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43137EB28DCB802005288CB /* CalendarDisplayView.swift */; };
 		C43137F628DE075B005288CB /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = C43137F528DE075B005288CB /* ACarousel */; };
+		C45C911428E31A9500EBE23E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C45C911328E31A9500EBE23E /* Alamofire */; };
+		C45C911728E31AC200EBE23E /* URLImageModule in Frameworks */ = {isa = PBXBuildFile; productRef = C45C911628E31AC200EBE23E /* URLImageModule */; };
 		C47168DF28D32B3000463917 /* ACarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47168DE28D32B3000463917 /* ACarouselView.swift */; };
 		C47168E228D32D5F00463917 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47168E128D32D5F00463917 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +41,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
+		C41BE0DD28E04BC50077EFEA /* h5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = h5; sourceTree = "<group>"; };
 		C4225E7228D0B99300AFA75D /* 狮山有你.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "狮山有你.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShishanYouniApp.swift; sourceTree = "<group>"; };
 		C4225E7728D0B99300AFA75D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +55,7 @@
 		C4225EB628D0C22200AFA75D /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		C4225EBD28D18A9F00AFA75D /* AddGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupView.swift; sourceTree = "<group>"; };
 		C43137EB28DCB802005288CB /* CalendarDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDisplayView.swift; sourceTree = "<group>"; };
+		C45C911828E31BD400EBE23E /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C47168DE28D32B3000463917 /* ACarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACarouselView.swift; sourceTree = "<group>"; };
 		C47168E128D32D5F00463917 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +66,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43137F628DE075B005288CB /* ACarousel in Frameworks */,
+				C45C911428E31A9500EBE23E /* Alamofire in Frameworks */,
+				C45C911728E31AC200EBE23E /* URLImageModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +77,7 @@
 		C4225E6928D0B99300AFA75D = {
 			isa = PBXGroup;
 			children = (
+				C45C911828E31BD400EBE23E /* Test.playground */,
 				C4225E7428D0B99300AFA75D /* ShishanYouni */,
 				C4225E7B28D0B99400AFA75D /* Preview Content */,
 				C4225E7328D0B99300AFA75D /* Products */,
@@ -86,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */,
+				C41BE0DD28E04BC50077EFEA /* h5 */,
 				C4225E7728D0B99300AFA75D /* ContentView.swift */,
 				C4225E7928D0B99400AFA75D /* Assets.xcassets */,
 				C43137FA28E0359E005288CB /* Calendar */,
@@ -137,6 +148,7 @@
 			children = (
 				C4225EAE28D0BB8300AFA75D /* HomeView.swift */,
 				C47168DE28D32B3000463917 /* ACarouselView.swift */,
+				C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -160,6 +172,8 @@
 			name = ShishanYouni;
 			packageProductDependencies = (
 				C43137F528DE075B005288CB /* ACarousel */,
+				C45C911328E31A9500EBE23E /* Alamofire */,
+				C45C911628E31AC200EBE23E /* URLImageModule */,
 			);
 			productName = ShishanYouni;
 			productReference = C4225E7228D0B99300AFA75D /* 狮山有你.app */;
@@ -191,6 +205,9 @@
 			mainGroup = C4225E6928D0B99300AFA75D;
 			packageReferences = (
 				C43137F428DE075B005288CB /* XCRemoteSwiftPackageReference "ACarousel" */,
+				C41BE0DA28E04AE00077EFEA /* XCRemoteSwiftPackageReference "WKView" */,
+				C45C911228E31A9500EBE23E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C45C911528E31AC200EBE23E /* XCRemoteSwiftPackageReference "url-image-module" */,
 			);
 			productRefGroup = C4225E7328D0B99300AFA75D /* Products */;
 			projectDirPath = "";
@@ -207,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4225E7D28D0B99400AFA75D /* Preview Assets.xcassets in Resources */,
+				C41BE0DE28E04BC50077EFEA /* h5 in Resources */,
 				C4225E7A28D0B99400AFA75D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +247,7 @@
 				C4225E7628D0B99300AFA75D /* ShishanYouniApp.swift in Sources */,
 				C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */,
 				C4225EB328D0C13D00AFA75D /* AccountView.swift in Sources */,
+				C41BE0DC28E04B240077EFEA /* HomeDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,12 +373,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ShishanYouni/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,12 +404,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ShishanYouni/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,12 +450,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C41BE0DA28E04AE00077EFEA /* XCRemoteSwiftPackageReference "WKView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/WKView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		C43137F428DE075B005288CB /* XCRemoteSwiftPackageReference "ACarousel" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitee.com/leng_ruipeng/ACarousel?_from=gitee_search";
 			requirement = {
 				branch = main;
 				kind = branch;
+			};
+		};
+		C45C911228E31A9500EBE23E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C45C911528E31AC200EBE23E /* XCRemoteSwiftPackageReference "url-image-module" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftui-packages/url-image-module.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -444,6 +489,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C43137F428DE075B005288CB /* XCRemoteSwiftPackageReference "ACarousel" */;
 			productName = ACarousel;
+		};
+		C45C911328E31A9500EBE23E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C45C911228E31A9500EBE23E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C45C911628E31AC200EBE23E /* URLImageModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C45C911528E31AC200EBE23E /* XCRemoteSwiftPackageReference "url-image-module" */;
+			productName = URLImageModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

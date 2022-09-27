@@ -31,7 +31,7 @@ struct AccountView: View {
                 }
                 Button(action: {}){
                     Text("登陆")
-                }.buttonStyle(.bordered)
+                }//.buttonStyle(.bordered)
                 Spacer()
             }.padding()
         }
