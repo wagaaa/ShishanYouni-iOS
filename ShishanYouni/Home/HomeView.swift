@@ -10,36 +10,36 @@ import ACarousel
 
 struct HomeView: View {
     let items: [Item] = roles.map { Item(image: Image($0)) }
+    let homeicons: [String] = ["score", "exam", "guide","freeroom"]
+    let labels:[String] = ["成绩查询","考试信息","校园攻略","空教室查询"]
     var body: some View {
         NavigationView {
-            VStack(alignment: .center, spacing: 20){
-            ACarouselView()
-                .padding(.all)
-                .frame(width: 400.0)
-            LazyVGrid(columns: [GridItem(.fixed(100)), GridItem(.fixed(100)), GridItem(.fixed(100))]) {
-                ForEach(0 ..< 12) { index in
-//                    RoundedRectangle(cornerRadius: 5)
-//                        .foregroundColor(Color(hue: 0.03 * Double(index), saturation: 1, brightness: 1))
-//                        .frame(height: 50)
-//                        .overlay(Text("\(index)"))
-                    ButtonView()
+            VStack(){
+                ACarouselView()
+                    .padding(.all)
+                    .frame(width: 400.0)
+                LazyVGrid(columns: [GridItem(.fixed(100)), GridItem(.fixed(100)), GridItem(.fixed(100))]) {
+                    ForEach(0 ..< 4) { index in
+                        ButtonView(imagename: homeicons[index], name: labels[index])
+                            .padding(.all, 10)
+                    }
                 }
-            }
-        }.navigationBarTitle("主页", displayMode: .inline)
+                }
+            .navigationBarTitle("主页", displayMode: .inline)
+            .padding(.top, -200)
         }
     }
 }
 
 struct ButtonView: View {
-    @State var imagename: String = "person"
-    @State var name: String = "我的"
+    @State var imagename: String
+    @State var name: String
     var body: some View {
         VStack{
             Button(action: {}){
-                Image("logo")
+                Image(imagename)
                     .resizable()
-                    .foregroundColor(.accentColor)
-                    .frame(width: 40,height: 40)
+                    .frame(width: 60,height: 60)
             }
             Text(name)
                 .font(.caption)

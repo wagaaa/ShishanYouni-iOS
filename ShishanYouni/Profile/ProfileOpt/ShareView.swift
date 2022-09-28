@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import URLImageModule
 
 struct ShareView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+            URLImage(url: "https://lion-1258983611.file.myqcloud.com/lion/pic/index/3.jpg")
+        
     }
 }
 
