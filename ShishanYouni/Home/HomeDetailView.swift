@@ -12,7 +12,7 @@ import WebKit
 struct HomeDetailView: View {
     @State var dest: String
     var body: some View {
-        let _request: URLRequest = URLRequest(url: URL(string: ".h5/index.html/\(dest)/\(dest)")!)
+        let request: URLRequest = URLRequest(url: URL(string: ".h5/index.html/\(dest)/\(dest)")!)
         NavigationView {
             
         }
