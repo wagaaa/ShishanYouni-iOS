@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C408A24528E5B7D900BD1935 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408A24428E5B7D900BD1935 /* ImageCarouselView.swift */; };
 		C41BE0DC28E04B240077EFEA /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */; };
 		C41BE0DE28E04BC50077EFEA /* h5 in Resources */ = {isa = PBXBuildFile; fileRef = C41BE0DD28E04BC50077EFEA /* h5 */; };
 		C4225E7628D0B99300AFA75D /* ShishanYouniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */; };
@@ -19,11 +20,9 @@
 		C4225EB728D0C22200AFA75D /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EB628D0C22200AFA75D /* ShareView.swift */; };
 		C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EBD28D18A9F00AFA75D /* AddGroupView.swift */; };
 		C43137EC28DCB802005288CB /* CalendarDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43137EB28DCB802005288CB /* CalendarDisplayView.swift */; };
-		C43137F628DE075B005288CB /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = C43137F528DE075B005288CB /* ACarousel */; };
 		C45C911428E31A9500EBE23E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C45C911328E31A9500EBE23E /* Alamofire */; };
 		C45C911728E31AC200EBE23E /* URLImageModule in Frameworks */ = {isa = PBXBuildFile; productRef = C45C911628E31AC200EBE23E /* URLImageModule */; };
 		C45C911A28E3483E00EBE23E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C911928E3483E00EBE23E /* AboutView.swift */; };
-		C47168DF28D32B3000463917 /* ACarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47168DE28D32B3000463917 /* ACarouselView.swift */; };
 		C47168E228D32D5F00463917 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47168E128D32D5F00463917 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C408A24428E5B7D900BD1935 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
 		C41BE0DD28E04BC50077EFEA /* h5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = h5; sourceTree = "<group>"; };
 		C4225E7228D0B99300AFA75D /* 狮山有你.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "狮山有你.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +56,6 @@
 		C43137EB28DCB802005288CB /* CalendarDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDisplayView.swift; sourceTree = "<group>"; };
 		C45C911928E3483E00EBE23E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C45C911B28E4607A00EBE23E /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		C47168DE28D32B3000463917 /* ACarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACarouselView.swift; sourceTree = "<group>"; };
 		C47168E128D32D5F00463917 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C43137F628DE075B005288CB /* ACarousel in Frameworks */,
 				C45C911428E31A9500EBE23E /* Alamofire in Frameworks */,
 				C45C911728E31AC200EBE23E /* URLImageModule in Frameworks */,
 			);
@@ -147,8 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				C4225EAE28D0BB8300AFA75D /* HomeView.swift */,
-				C47168DE28D32B3000463917 /* ACarouselView.swift */,
 				C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */,
+				C408A24428E5B7D900BD1935 /* ImageCarouselView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -171,7 +169,6 @@
 			);
 			name = ShishanYouni;
 			packageProductDependencies = (
-				C43137F528DE075B005288CB /* ACarousel */,
 				C45C911328E31A9500EBE23E /* Alamofire */,
 				C45C911628E31AC200EBE23E /* URLImageModule */,
 			);
@@ -204,7 +201,6 @@
 			);
 			mainGroup = C4225E6928D0B99300AFA75D;
 			packageReferences = (
-				C43137F428DE075B005288CB /* XCRemoteSwiftPackageReference "ACarousel" */,
 				C41BE0DA28E04AE00077EFEA /* XCRemoteSwiftPackageReference "WKView" */,
 				C45C911228E31A9500EBE23E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C45C911528E31AC200EBE23E /* XCRemoteSwiftPackageReference "url-image-module" */,
@@ -242,11 +238,11 @@
 				C4225EB728D0C22200AFA75D /* ShareView.swift in Sources */,
 				C45C911A28E3483E00EBE23E /* AboutView.swift in Sources */,
 				C43137EC28DCB802005288CB /* CalendarDisplayView.swift in Sources */,
-				C47168DF28D32B3000463917 /* ACarouselView.swift in Sources */,
 				C4225E7828D0B99300AFA75D /* ContentView.swift in Sources */,
 				C4225E7628D0B99300AFA75D /* ShishanYouniApp.swift in Sources */,
 				C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */,
 				C4225EB328D0C13D00AFA75D /* AccountView.swift in Sources */,
+				C408A24528E5B7D900BD1935 /* ImageCarouselView.swift in Sources */,
 				C41BE0DC28E04B240077EFEA /* HomeDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,14 +454,6 @@
 				kind = branch;
 			};
 		};
-		C43137F428DE075B005288CB /* XCRemoteSwiftPackageReference "ACarousel" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitee.com/leng_ruipeng/ACarousel?_from=gitee_search";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		C45C911228E31A9500EBE23E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -485,11 +473,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C43137F528DE075B005288CB /* ACarousel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C43137F428DE075B005288CB /* XCRemoteSwiftPackageReference "ACarousel" */;
-			productName = ACarousel;
-		};
 		C45C911328E31A9500EBE23E /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C45C911228E31A9500EBE23E /* XCRemoteSwiftPackageReference "Alamofire" */;

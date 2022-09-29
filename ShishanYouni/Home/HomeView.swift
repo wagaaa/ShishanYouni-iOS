@@ -9,15 +9,12 @@ import SwiftUI
 import ACarousel
 
 struct HomeView: View {
-    let items: [Item] = roles.map { Item(image: Image($0)) }
     let homeicons: [String] = ["score", "exam", "guide","freeroom"]
     let labels:[String] = ["成绩查询","考试信息","校园攻略","空教室查询"]
     var body: some View {
         NavigationView {
             VStack(){
-                ACarouselView()
-                    .padding(.all)
-                    .frame(width: 400.0)
+                ImageCarousel()
                 LazyVGrid(columns: [GridItem(.fixed(100)), GridItem(.fixed(100)), GridItem(.fixed(100))]) {
                     ForEach(0 ..< 4) { index in
                         ButtonView(imagename: homeicons[index], name: labels[index])

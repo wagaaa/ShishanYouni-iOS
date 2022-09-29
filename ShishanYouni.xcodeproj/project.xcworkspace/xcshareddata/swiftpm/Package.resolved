@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "acarousel?_from=gitee_search",
-      "kind" : "remoteSourceControl",
-      "location" : "https://gitee.com/leng_ruipeng/ACarousel?_from=gitee_search",
-      "state" : {
-        "branch" : "main",
-        "revision" : "807d859fb39ccaae2caf8ff60fb2ee1a5048f4ca"
-      }
-    },
-    {
       "identity" : "alamofire",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Alamofire/Alamofire.git",
