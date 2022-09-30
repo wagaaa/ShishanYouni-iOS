@@ -41,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		C408A24428E5B7D900BD1935 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
+		C408A24828E5BD6300BD1935 /* GetNavImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNavImg.swift; sourceTree = "<group>"; };
 		C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
 		C41BE0DD28E04BC50077EFEA /* h5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = h5; sourceTree = "<group>"; };
 		C4225E7228D0B99300AFA75D /* 狮山有你.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "狮山有你.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +76,7 @@
 		C4225E6928D0B99300AFA75D = {
 			isa = PBXGroup;
 			children = (
+				C408A24828E5BD6300BD1935 /* GetNavImg.swift */,
 				C45C911B28E4607A00EBE23E /* test.playground */,
 				C4225E7428D0B99300AFA75D /* ShishanYouni */,
 				C4225E7B28D0B99400AFA75D /* Preview Content */,
@@ -94,9 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */,
-				C41BE0DD28E04BC50077EFEA /* h5 */,
 				C4225E7728D0B99300AFA75D /* ContentView.swift */,
 				C4225E7928D0B99400AFA75D /* Assets.xcassets */,
+				C41BE0DD28E04BC50077EFEA /* h5 */,
 				C43137FA28E0359E005288CB /* Calendar */,
 				C47168E028D32D3700463917 /* Home */,
 				C4225EB928D0C25900AFA75D /* Profile */,

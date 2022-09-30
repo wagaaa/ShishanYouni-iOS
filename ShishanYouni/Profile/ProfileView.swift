@@ -40,7 +40,7 @@ private var appMessageView: some View {
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color(.systemGray5), lineWidth: 1))
 
-                Text("狮山有你")
+            Text("狮山有你")
                     .font(.system(size: 17))
             
         }.padding(.top, 40)
