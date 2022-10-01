@@ -4,28 +4,44 @@
 //
 //  Created by jerry on 2022/9/13.
 //
+//, tapDestination: "AccountView()",tapDestination: "ShareView()",tapDestination: "AddGroupView()"
 
 import SwiftUI
+import ActivityView
 
 struct ProfileView: View {
+    @State private var item: ActivityItem?
     var body: some View {
         NavigationView {
-            VStack{
-                appMessageView
+            VStack {
+                NavigationLink(destination: AboutView()) {
+                    appMessageView
+                }.buttonStyle(.plain)
                 List {
-                    
                     Section {
-                        listItemView(itemImage: "person", itemName: "绑定账户", tapDestination: "AccountView()")
-                        listItemView(itemImage: "square.and.arrow.up", itemName: "推荐给朋友",tapDestination: "ShareView()")
-                        listItemView(itemImage: "person.2", itemName: "加入用户交流群",tapDestination: "AddGroupView()")
-                        
+                        NavigationLink(destination: AccountView()) {
+                            listItemView(itemImage: "person", itemName: "绑定账户")
+                        }
+                        //NavigationLink(destination:ShareView()){
+                        listItemView(itemImage: "square.and.arrow.up", itemName: "推荐给朋友")
+                            .onTapGesture {
+                            item = ActivityItem(
+                                items: "This will be shared"
+                            )
+
+                        }.activitySheet($item)
+                        //}
+                        NavigationLink(destination: AddGroupView()) {
+                            listItemView(itemImage: "person.2", itemName: "加入用户交流群")
+                        }
+
                     }
                 }
                     .listStyle(.insetGrouped)
                     .navigationBarTitle("我的", displayMode: .inline)
             }
         }
-            
+
     }
 }
 
@@ -41,8 +57,8 @@ private var appMessageView: some View {
                 .overlay(Circle().stroke(Color(.systemGray5), lineWidth: 1))
 
             Text("狮山有你")
-                    .font(.system(size: 17))
-            
+                .font(.system(size: 17))
+
         }.padding(.top, 40)
     }
 }
@@ -55,13 +71,13 @@ protocol viewName {
 struct listItemView: View {
     var itemImage: String
     var itemName: String
-    var tapDestination: String
+    //var tapDestination: String
     var body: some View {
-        NavigationLink(destination: Text(tapDestination)){
-        HStack{
+        //NavigationLink(destination: Text(tapDestination)){
+        HStack {
             Label(itemName, systemImage: itemImage)
         }.padding(.vertical, 15)
-        }
+        //}
     }
 }
 

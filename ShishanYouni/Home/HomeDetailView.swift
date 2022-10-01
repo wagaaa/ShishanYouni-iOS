@@ -1,26 +1,57 @@
 //
 //  HoneDetailView.swift
 //  ShishanYouni
-//
+//  WebView视图
 //  Created by jerry on 2022/9/25.
 //
 
 import SwiftUI
 import WebKit
-//import WKView
 
 struct HomeDetailView: View {
-    @State var dest: String
+    //@State var title:String
+    //@State var dest: String
     var body: some View {
-        let _request: URLRequest = URLRequest(url: URL(string: ".h5/index.html/\(dest)/\(dest)")!)
-        NavigationView {
-            
-        }
+        NavigationView{
+                    WebView_UI()
+                        //.frame(height: 200.0)
+//                    Text("WxWebView").padding()
+//                    WebView_UI()
+//                        .frame(height: 1200.0)
+//                    Text("Footer").padding()
+                .navigationTitle("主页")
+                }
+                //.frame(height: 350)
+    }
+}
+
+class WebViewController: UIViewController, WKNavigationDelegate {
+    var webView: WKWebView!
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // let myURL = URL(string:"https://www.apple.com")
+        let url = Bundle.main.url(forResource: "/h5/index", withExtension: "html",subdirectory:"")!
+        webView.load(URLRequest(url: url))
+    }
+}
+
+struct WebView_UI: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> some UIViewController {
+        let vc = WebViewController()
+        return vc
+    }
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
     }
 }
 
 struct HomeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeDetailView(dest: "exam")
+        HomeDetailView()
     }
 }

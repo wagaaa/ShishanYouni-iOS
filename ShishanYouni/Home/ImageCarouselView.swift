@@ -1,6 +1,9 @@
+//顶部轮播图
+
 import SwiftUI
 import Combine
 
+//定义轮播图结构
 struct ImageCarouselView<Content: View>: View {
     private var numberOfImages: Int
     private var content: Content
@@ -67,8 +70,11 @@ struct ImageCarouselView<Content: View>: View {
     }
 }
 
+
+//生成视图
 struct ImageCarousel: View {
     var body: some View {
+        //var images: [ImageData] = ImageUrl()
         GeometryReader { geometry in
                         ImageCarouselView(numberOfImages: 3) {
                             Image("First")
@@ -94,25 +100,25 @@ struct ImageCarousel: View {
 struct ImageCarouselView_Previews: PreviewProvider {
     static var previews: some View {
         
-        // 8
+        // 预览
         GeometryReader { geometry in
             ImageCarouselView(numberOfImages: 3) {
-                Image("image_carousel_1")
+                Image("First")
                     .resizable()
                     .scaledToFill()
                     .frame(width: geometry.size.width, height: geometry.size.height)
                     .clipped()
-                Image("image_carousel_2")
+                Image("Second")
                     .resizable()
                     .scaledToFill()
                     .frame(width: geometry.size.width, height: geometry.size.height)
                     .clipped()
-                Image("image_carousel_3")
+                Image("Third")
                     .resizable()
                     .scaledToFill()
                     .frame(width: geometry.size.width, height: geometry.size.height)
                     .clipped()
             }
-        }.frame(width: UIScreen.main.bounds.width, height: 300, alignment: .center)
+        }.frame(width: UIScreen.main.bounds.width, height: 182, alignment: .center)
     }
 }

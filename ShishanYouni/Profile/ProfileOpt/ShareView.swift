@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
-import URLImageModule
+import ActivityView
 
 struct ShareView: View {
+    @State private var item: ActivityItem?
     var body: some View {
-        
-            URLImage(url: "https://lion-1258983611.file.myqcloud.com/lion/pic/index/3.jpg")
-        
+        Button {
+                item = ActivityItem(
+                    items: "This will be shared"
+                )
+            } label: {
+                Text("Share")
+            }
+            .activitySheet($item)
     }
 }
 

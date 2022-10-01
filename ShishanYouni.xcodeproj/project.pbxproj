@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C408A24528E5B7D900BD1935 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408A24428E5B7D900BD1935 /* ImageCarouselView.swift */; };
+		C408A24928E703E800BD1935 /* GetNavImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408A24828E5BD6300BD1935 /* GetNavImg.swift */; };
 		C41BE0DC28E04B240077EFEA /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */; };
 		C41BE0DE28E04BC50077EFEA /* h5 in Resources */ = {isa = PBXBuildFile; fileRef = C41BE0DD28E04BC50077EFEA /* h5 */; };
 		C4225E7628D0B99300AFA75D /* ShishanYouniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */; };
@@ -20,6 +21,7 @@
 		C4225EB728D0C22200AFA75D /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EB628D0C22200AFA75D /* ShareView.swift */; };
 		C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EBD28D18A9F00AFA75D /* AddGroupView.swift */; };
 		C43137EC28DCB802005288CB /* CalendarDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43137EB28DCB802005288CB /* CalendarDisplayView.swift */; };
+		C45731FA28E877B400979990 /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = C45731F928E877B400979990 /* ActivityView */; };
 		C45C911428E31A9500EBE23E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C45C911328E31A9500EBE23E /* Alamofire */; };
 		C45C911728E31AC200EBE23E /* URLImageModule in Frameworks */ = {isa = PBXBuildFile; productRef = C45C911628E31AC200EBE23E /* URLImageModule */; };
 		C45C911A28E3483E00EBE23E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C911928E3483E00EBE23E /* AboutView.swift */; };
@@ -66,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45C911428E31A9500EBE23E /* Alamofire in Frameworks */,
+				C45731FA28E877B400979990 /* ActivityView in Frameworks */,
 				C45C911728E31AC200EBE23E /* URLImageModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +79,6 @@
 		C4225E6928D0B99300AFA75D = {
 			isa = PBXGroup;
 			children = (
-				C408A24828E5BD6300BD1935 /* GetNavImg.swift */,
 				C45C911B28E4607A00EBE23E /* test.playground */,
 				C4225E7428D0B99300AFA75D /* ShishanYouni */,
 				C4225E7B28D0B99400AFA75D /* Preview Content */,
@@ -95,6 +97,7 @@
 		C4225E7428D0B99300AFA75D /* ShishanYouni */ = {
 			isa = PBXGroup;
 			children = (
+				C408A24828E5BD6300BD1935 /* GetNavImg.swift */,
 				C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */,
 				C4225E7728D0B99300AFA75D /* ContentView.swift */,
 				C4225E7928D0B99400AFA75D /* Assets.xcassets */,
@@ -173,6 +176,7 @@
 			packageProductDependencies = (
 				C45C911328E31A9500EBE23E /* Alamofire */,
 				C45C911628E31AC200EBE23E /* URLImageModule */,
+				C45731F928E877B400979990 /* ActivityView */,
 			);
 			productName = ShishanYouni;
 			productReference = C4225E7228D0B99300AFA75D /* 狮山有你.app */;
@@ -203,9 +207,9 @@
 			);
 			mainGroup = C4225E6928D0B99300AFA75D;
 			packageReferences = (
-				C41BE0DA28E04AE00077EFEA /* XCRemoteSwiftPackageReference "WKView" */,
 				C45C911228E31A9500EBE23E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C45C911528E31AC200EBE23E /* XCRemoteSwiftPackageReference "url-image-module" */,
+				C45731F828E877B400979990 /* XCRemoteSwiftPackageReference "ActivityView" */,
 			);
 			productRefGroup = C4225E7328D0B99300AFA75D /* Products */;
 			projectDirPath = "";
@@ -245,6 +249,7 @@
 				C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */,
 				C4225EB328D0C13D00AFA75D /* AccountView.swift in Sources */,
 				C408A24528E5B7D900BD1935 /* ImageCarouselView.swift in Sources */,
+				C408A24928E703E800BD1935 /* GetNavImg.swift in Sources */,
 				C41BE0DC28E04B240077EFEA /* HomeDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ShishanYouni/Preview Content\"";
+				DEVELOPMENT_TEAM = Y344Y3N8GR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -400,6 +406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ShishanYouni/Preview Content\"";
+				DEVELOPMENT_TEAM = Y344Y3N8GR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
@@ -448,12 +455,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C41BE0DA28E04AE00077EFEA /* XCRemoteSwiftPackageReference "WKView" */ = {
+		C45731F828E877B400979990 /* XCRemoteSwiftPackageReference "ActivityView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rebeloper/WKView.git";
+			repositoryURL = "https://github.com/SwiftUI-Plus/ActivityView.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		C45C911228E31A9500EBE23E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -475,6 +482,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C45731F928E877B400979990 /* ActivityView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C45731F828E877B400979990 /* XCRemoteSwiftPackageReference "ActivityView" */;
+			productName = ActivityView;
+		};
 		C45C911328E31A9500EBE23E /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C45C911228E31A9500EBE23E /* XCRemoteSwiftPackageReference "Alamofire" */;
