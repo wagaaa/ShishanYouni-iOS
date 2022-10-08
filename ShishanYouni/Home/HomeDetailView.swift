@@ -12,16 +12,12 @@ struct HomeDetailView: View {
     //@State var title:String
     //@State var dest: String
     var body: some View {
-        NavigationView{
-                    WebView_UI()
-                        //.frame(height: 200.0)
-//                    Text("WxWebView").padding()
-//                    WebView_UI()
-//                        .frame(height: 1200.0)
-//                    Text("Footer").padding()
-                .navigationTitle("主页")
-                }
-                //.frame(height: 350)
+        NavigationView {
+            WebView_UI()
+            
+        }.navigationTitle("主页")
+            .navigationBarTitleDisplayMode(.inline)
+        //.frame(height: 350)
     }
 }
 
@@ -36,7 +32,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // let myURL = URL(string:"https://www.apple.com")
-        let url = Bundle.main.url(forResource: "/h5/index", withExtension: "html",subdirectory:"")!
+        let url = Bundle.main.url(forResource: "/h5/index", withExtension: "html", subdirectory: "")!
         webView.load(URLRequest(url: url))
     }
 }

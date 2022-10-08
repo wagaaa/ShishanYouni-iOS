@@ -16,7 +16,7 @@ struct AboutView: View {
                         + Text("iOS版狮山有你由华中农业大学信息学院沸点工作室iOS组开发，致力于为更多同学提供便捷好用的平台。\n\n")
                             + Text("指导教师：秦丽\n小组成员：赵思博、王昊芮、祝铭煊")
                 }
-                Text("Copyright ©️2022 狮山有你")
+                Text("Copyright ©2022 狮山有你")
                     .font(.caption)
             }
             .navigationTitle("关于")

@@ -12,12 +12,24 @@ import SwiftUI
 struct AccountView: View {
     @State var passwd: String = ""
     @State var username: String = ""
+    @State var loginStatus: Bool = false
     var body: some View {
-        //@state var loginStatus: Bool
         NavigationView{
             VStack(alignment: .leading){
-                Text("未绑定")
-                    .font(.title)
+                HStack{
+                    Spacer()
+                    Image("logo")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                    Spacer()
+                }
+                if loginStatus{
+                    Text("已绑定")
+                        .font(.largeTitle)
+                }else{
+                    Text("未绑定")
+                        .font(.largeTitle)
+                }
                 
                 HStack{
                     Text("学号：")
@@ -29,9 +41,14 @@ struct AccountView: View {
                     SecureField("", text: $passwd)
                         .textFieldStyle(.roundedBorder)
                 }
-                Button(action: {}){
-                    Text("登陆")
-                }//.buttonStyle(.bordered)
+                Button(action: {getimgURL()}){
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(height: 50)
+                        Text("登陆")
+                            .foregroundColor(.white)
+                    }
+                }
                 Spacer()
             }.padding()
         }

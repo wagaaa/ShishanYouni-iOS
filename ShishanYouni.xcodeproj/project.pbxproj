@@ -20,12 +20,13 @@
 		C4225EB328D0C13D00AFA75D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EB228D0C13D00AFA75D /* AccountView.swift */; };
 		C4225EB728D0C22200AFA75D /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EB628D0C22200AFA75D /* ShareView.swift */; };
 		C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EBD28D18A9F00AFA75D /* AddGroupView.swift */; };
-		C43137EC28DCB802005288CB /* CalendarDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43137EB28DCB802005288CB /* CalendarDisplayView.swift */; };
+		C453DFEA28F111F400AD74DF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453DFE928F111F400AD74DF /* NetworkManager.swift */; };
 		C45731FA28E877B400979990 /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = C45731F928E877B400979990 /* ActivityView */; };
 		C45C911428E31A9500EBE23E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C45C911328E31A9500EBE23E /* Alamofire */; };
 		C45C911728E31AC200EBE23E /* URLImageModule in Frameworks */ = {isa = PBXBuildFile; productRef = C45C911628E31AC200EBE23E /* URLImageModule */; };
 		C45C911A28E3483E00EBE23E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C911928E3483E00EBE23E /* AboutView.swift */; };
 		C47168E228D32D5F00463917 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47168E128D32D5F00463917 /* CalendarView.swift */; };
+		F149706E966B3A701BE85B3D /* Pods_ShishanYouni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73341C6DFE82196B52084C4 /* Pods_ShishanYouni.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6BD44C39F6A89C63B3DB8D27 /* Pods-ShishanYouni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShishanYouni.debug.xcconfig"; path = "Target Support Files/Pods-ShishanYouni/Pods-ShishanYouni.debug.xcconfig"; sourceTree = "<group>"; };
+		7373411C69F956D7A1C79A0D /* Pods-ShishanYouni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShishanYouni.release.xcconfig"; path = "Target Support Files/Pods-ShishanYouni/Pods-ShishanYouni.release.xcconfig"; sourceTree = "<group>"; };
 		C408A24428E5B7D900BD1935 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		C408A24828E5BD6300BD1935 /* GetNavImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNavImg.swift; sourceTree = "<group>"; };
 		C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
@@ -56,10 +59,11 @@
 		C4225EB228D0C13D00AFA75D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		C4225EB628D0C22200AFA75D /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		C4225EBD28D18A9F00AFA75D /* AddGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupView.swift; sourceTree = "<group>"; };
-		C43137EB28DCB802005288CB /* CalendarDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDisplayView.swift; sourceTree = "<group>"; };
+		C453DFE928F111F400AD74DF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C45C911928E3483E00EBE23E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C45C911B28E4607A00EBE23E /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C47168E128D32D5F00463917 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		F73341C6DFE82196B52084C4 /* Pods_ShishanYouni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShishanYouni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +74,30 @@
 				C45C911428E31A9500EBE23E /* Alamofire in Frameworks */,
 				C45731FA28E877B400979990 /* ActivityView in Frameworks */,
 				C45C911728E31AC200EBE23E /* URLImageModule in Frameworks */,
+				F149706E966B3A701BE85B3D /* Pods_ShishanYouni.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85FAF60A308B1CC591FF152C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F73341C6DFE82196B52084C4 /* Pods_ShishanYouni.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B02E15F32D55757D9C332D19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BD44C39F6A89C63B3DB8D27 /* Pods-ShishanYouni.debug.xcconfig */,
+				7373411C69F956D7A1C79A0D /* Pods-ShishanYouni.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C4225E6928D0B99300AFA75D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				C4225E7428D0B99300AFA75D /* ShishanYouni */,
 				C4225E7B28D0B99400AFA75D /* Preview Content */,
 				C4225E7328D0B99300AFA75D /* Products */,
+				B02E15F32D55757D9C332D19 /* Pods */,
+				85FAF60A308B1CC591FF152C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +123,7 @@
 			children = (
 				C408A24828E5BD6300BD1935 /* GetNavImg.swift */,
 				C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */,
+				C453DFE928F111F400AD74DF /* NetworkManager.swift */,
 				C4225E7728D0B99300AFA75D /* ContentView.swift */,
 				C4225E7928D0B99400AFA75D /* Assets.xcassets */,
 				C41BE0DD28E04BC50077EFEA /* h5 */,
@@ -141,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				C47168E128D32D5F00463917 /* CalendarView.swift */,
-				C43137EB28DCB802005288CB /* CalendarDisplayView.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -163,10 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4225EAB28D0B99500AFA75D /* Build configuration list for PBXNativeTarget "ShishanYouni" */;
 			buildPhases = (
+				1C6124A6E4AA179D8713DA86 /* [CP] Check Pods Manifest.lock */,
 				C4225E6E28D0B99300AFA75D /* Sources */,
 				C4225E6F28D0B99300AFA75D /* Frameworks */,
 				C4225E7028D0B99300AFA75D /* Resources */,
 				C4225EAA28D0B99500AFA75D /* Embed Watch Content */,
+				058C285CA4B52E8B06E444A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +259,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		058C285CA4B52E8B06E444A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShishanYouni/Pods-ShishanYouni-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShishanYouni/Pods-ShishanYouni-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShishanYouni/Pods-ShishanYouni-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C6124A6E4AA179D8713DA86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShishanYouni-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4225E6E28D0B99300AFA75D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -241,9 +309,9 @@
 				C47168E228D32D5F00463917 /* CalendarView.swift in Sources */,
 				C4225EAF28D0BB8300AFA75D /* HomeView.swift in Sources */,
 				C4225EB128D0C04700AFA75D /* ProfileView.swift in Sources */,
+				C453DFEA28F111F400AD74DF /* NetworkManager.swift in Sources */,
 				C4225EB728D0C22200AFA75D /* ShareView.swift in Sources */,
 				C45C911A28E3483E00EBE23E /* AboutView.swift in Sources */,
-				C43137EC28DCB802005288CB /* CalendarDisplayView.swift in Sources */,
 				C4225E7828D0B99300AFA75D /* ContentView.swift in Sources */,
 				C4225E7628D0B99300AFA75D /* ShishanYouniApp.swift in Sources */,
 				C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */,
@@ -368,6 +436,7 @@
 		};
 		C4225EAC28D0B99500AFA75D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD44C39F6A89C63B3DB8D27 /* Pods-ShishanYouni.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -400,6 +469,7 @@
 		};
 		C4225EAD28D0B99500AFA75D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7373411C69F956D7A1C79A0D /* Pods-ShishanYouni.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
