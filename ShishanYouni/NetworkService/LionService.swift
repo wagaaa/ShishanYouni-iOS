@@ -1,6 +1,6 @@
 import Alamofire
 import Moya
-
+import ObjectMapper
 
 public enum Lion {
     //  获取轮播图
@@ -49,3 +49,25 @@ extension Lion: TargetType{
     }
 }
 
+
+struct singleImg: Mappable{
+    var url: String?
+    var sort: String?
+    
+    init?(map: ObjectMapper.Map) {}
+    
+    mutating func mapping(map: ObjectMapper.Map) {
+        url <- map["imgUrl"]
+        sort <- map["sort"]
+    }
+}x
+
+struct navImg: Mappable{
+    var imgs: [singleImg]?
+    
+    init(map: Map){}
+    
+    mutating func mapping(map: Map) {
+        imgs <- map["imgs"]
+    }
+}
