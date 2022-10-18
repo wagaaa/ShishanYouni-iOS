@@ -2,6 +2,7 @@
 
 import SwiftUI
 import Combine
+import URLImageModule
 
 //定义轮播图结构
 struct ImageCarouselView<Content: View>: View {
@@ -74,24 +75,39 @@ struct ImageCarouselView<Content: View>: View {
 //生成视图
 struct ImageCarousel: View {
     var body: some View {
-        //var images: [ImageData] = ImageUrl()
+        //获取图片URL
+        var imgs: [Int: String] = getNavImginDB()
         GeometryReader { geometry in
-                        ImageCarouselView(numberOfImages: 3) {
-                            Image("First")
+                        ImageCarouselView(numberOfImages: 4) {
+                            URLImage(url: imgs[0] ?? "", content: { image in
+                                image
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                                 .clipped()
-                            Image("Second")
+                        })
+
+                            URLImage(url: imgs[1] ?? "", content: { image in
+                                image
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                                 .clipped()
-                            Image("Third")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: geometry.size.width, height: geometry.size.height)
-                                .clipped()
+                        })
+                            URLImage(url: imgs[2] ?? "", content: { image in
+                                    image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: geometry.size.width, height: geometry.size.height)
+                                    .clipped()
+                            })
+                            URLImage(url: imgs[3] ?? "", content: { image in
+                                    image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: geometry.size.width, height: geometry.size.height)
+                                    .clipped()
+                            })
                         }
         }.frame(width: 366, height: 182, alignment: .center)
     }

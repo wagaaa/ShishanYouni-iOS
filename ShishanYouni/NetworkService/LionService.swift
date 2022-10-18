@@ -1,73 +1,68 @@
+/**
+ *  网络服务层
+ *  使用Moya实现
+ *  By JerryWang
+ */
+
 import Alamofire
 import Moya
-import ObjectMapper
 
 public enum Lion {
     //  获取轮播图
     case imgurl
+    //  获取课表
+    case timeTable
 }
 
 extension Lion: TargetType{
-    
+    //  初始URL
     public var baseURL: URL{
         switch self {
         case .imgurl:
             return URL(string: "https://lion.hzau.edu.cn")!
+        case .timeTable:
+            return URL(string: "https://lion.hzau.edu.cn")!
         }
     }
-    
+    //  URL路径
     public var path: String{
         switch self {
         case .imgurl:
             return "/app/navImgs"
+        case .timeTable:
+            return "/app/ios/timetable"
         }
     }
-    
+    //  http方法
     public var method: Moya.Method{
         return .post
     }
-    
+    // headers
     public var headers: [String : String]? {
         return ["Content-Type":"application/json"]
     }
-    
+    //  示例数据
     public var sampleData: Data {
         return "".data(using: String.Encoding.utf8)!
     }
-    
+    //  获取方法
     public var task: Task{
         switch self {
+        //  轮播图，Params和请求
         case .imgurl:
             var params: [String: Any] = [:]
             params["platform"] = "voluptate"
             params["schoolId"] = "aliquip fugiat pariatur"
             return .requestParameters(parameters: params, encoding: JSONEncoding.default)
-            
-        default:
-            return .requestPlain
+        //  课表，Params和请求
+        case .timeTable:
+            var params: [String: Any] = [:]
+            params["password"] = "88888888"
+            params["term"] = "1"
+            params["type"] = "0"
+            params["username"] = "12345678"
+            params["year"] = "2022"
+            return .requestParameters(parameters: params, encoding: JSONEncoding.default)
         }
-    }
-}
-
-
-struct singleImg: Mappable{
-    var url: String?
-    var sort: String?
-    
-    init?(map: ObjectMapper.Map) {}
-    
-    mutating func mapping(map: ObjectMapper.Map) {
-        url <- map["imgUrl"]
-        sort <- map["sort"]
-    }
-}x
-
-struct navImg: Mappable{
-    var imgs: [singleImg]?
-    
-    init(map: Map){}
-    
-    mutating func mapping(map: Map) {
-        imgs <- map["imgs"]
     }
 }

@@ -41,7 +41,7 @@ struct AccountView: View {
                     SecureField("", text: $passwd)
                         .textFieldStyle(.roundedBorder)
                 }
-                Button(action: {getimgURL()}){
+                Button(action: {}){
                     ZStack{
                         RoundedRectangle(cornerRadius: 10)
                             .frame(height: 50)

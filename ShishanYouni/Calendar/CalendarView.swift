@@ -11,7 +11,13 @@ struct CalendarView: View {
     var body: some View{
         NavigationView{
             ZStack{
-                DateBar()
+                //DateBar()
+                Button {
+                    getTimetable()
+                } label: {
+                    Text("Test")
+                }
+
             }
             .navigationTitle("课表")
             .navigationBarTitleDisplayMode(.inline)

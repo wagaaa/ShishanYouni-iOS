@@ -10,7 +10,6 @@
 		C408A24528E5B7D900BD1935 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408A24428E5B7D900BD1935 /* ImageCarouselView.swift */; };
 		C408A24928E703E800BD1935 /* LionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408A24828E5BD6300BD1935 /* LionService.swift */; };
 		C41BE0DC28E04B240077EFEA /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */; };
-		C41BE0DE28E04BC50077EFEA /* h5 in Resources */ = {isa = PBXBuildFile; fileRef = C41BE0DD28E04BC50077EFEA /* h5 */; };
 		C4225E7628D0B99300AFA75D /* ShishanYouniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */; };
 		C4225E7828D0B99300AFA75D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225E7728D0B99300AFA75D /* ContentView.swift */; };
 		C4225E7A28D0B99400AFA75D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4225E7928D0B99400AFA75D /* Assets.xcassets */; };
@@ -29,6 +28,8 @@
 		C4AEA91E28F1BF2800F832AC /* Single+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEA91C28F1BF2800F832AC /* Single+ObjectMapper.swift */; };
 		C4AEA91F28F1BF2800F832AC /* ObservableType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEA91D28F1BF2800F832AC /* ObservableType+ObjectMapper.swift */; };
 		C4AEA92128F1BF4100F832AC /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEA92028F1BF4100F832AC /* Response+ObjectMapper.swift */; };
+		C4AEA92328F2F7BA00F832AC /* h5.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4AEA92228F2F7BA00F832AC /* h5.bundle */; };
+		C4AEA92528F6E8CF00F832AC /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEA92428F6E8CF00F832AC /* DBService.swift */; };
 		F149706E966B3A701BE85B3D /* Pods_ShishanYouni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73341C6DFE82196B52084C4 /* Pods_ShishanYouni.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +52,6 @@
 		C408A24428E5B7D900BD1935 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		C408A24828E5BD6300BD1935 /* LionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionService.swift; sourceTree = "<group>"; };
 		C41BE0DB28E04B240077EFEA /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
-		C41BE0DD28E04BC50077EFEA /* h5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = h5; sourceTree = "<group>"; };
 		C4225E7228D0B99300AFA75D /* 狮山有你.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "狮山有你.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShishanYouniApp.swift; sourceTree = "<group>"; };
 		C4225E7728D0B99300AFA75D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +69,8 @@
 		C4AEA91C28F1BF2800F832AC /* Single+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+ObjectMapper.swift"; sourceTree = "<group>"; };
 		C4AEA91D28F1BF2800F832AC /* ObservableType+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+ObjectMapper.swift"; sourceTree = "<group>"; };
 		C4AEA92028F1BF4100F832AC /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
+		C4AEA92228F2F7BA00F832AC /* h5.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = h5.bundle; sourceTree = "<group>"; };
+		C4AEA92428F6E8CF00F832AC /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
 		F73341C6DFE82196B52084C4 /* Pods_ShishanYouni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShishanYouni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,9 +131,9 @@
 			children = (
 				C4AEA91B28F1983A00F832AC /* NetworkService */,
 				C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */,
+				C4AEA92228F2F7BA00F832AC /* h5.bundle */,
 				C4225E7728D0B99300AFA75D /* ContentView.swift */,
 				C4225E7928D0B99400AFA75D /* Assets.xcassets */,
-				C41BE0DD28E04BC50077EFEA /* h5 */,
 				C43137FA28E0359E005288CB /* Calendar */,
 				C47168E028D32D3700463917 /* Home */,
 				C4225EB928D0C25900AFA75D /* Profile */,
@@ -188,13 +190,22 @@
 		C4AEA91B28F1983A00F832AC /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				C4AEA92428F6E8CF00F832AC /* DBService.swift */,
 				C408A24828E5BD6300BD1935 /* LionService.swift */,
 				C453DFE928F111F400AD74DF /* NetworkManager.swift */,
+				C4AEA92628F6EAB600F832AC /* ServiceProvider */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		C4AEA92628F6EAB600F832AC /* ServiceProvider */ = {
+			isa = PBXGroup;
+			children = (
 				C4AEA91D28F1BF2800F832AC /* ObservableType+ObjectMapper.swift */,
 				C4AEA92028F1BF4100F832AC /* Response+ObjectMapper.swift */,
 				C4AEA91C28F1BF2800F832AC /* Single+ObjectMapper.swift */,
 			);
-			path = NetworkService;
+			path = ServiceProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +279,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AEA92328F2F7BA00F832AC /* h5.bundle in Resources */,
 				C4225E7D28D0B99400AFA75D /* Preview Assets.xcassets in Resources */,
-				C41BE0DE28E04BC50077EFEA /* h5 in Resources */,
 				C4225E7A28D0B99400AFA75D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +343,7 @@
 				C4225E7828D0B99300AFA75D /* ContentView.swift in Sources */,
 				C4AEA91F28F1BF2800F832AC /* ObservableType+ObjectMapper.swift in Sources */,
 				C4AEA91E28F1BF2800F832AC /* Single+ObjectMapper.swift in Sources */,
+				C4AEA92528F6E8CF00F832AC /* DBService.swift in Sources */,
 				C4225E7628D0B99300AFA75D /* ShishanYouniApp.swift in Sources */,
 				C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */,
 				C4225EB328D0C13D00AFA75D /* AccountView.swift in Sources */,

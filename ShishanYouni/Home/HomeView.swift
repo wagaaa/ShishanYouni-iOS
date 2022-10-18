@@ -11,6 +11,10 @@ struct HomeView: View {
     //定义常量
     let homeicons: [String] = ["score", "exam", "guide", "freeroom"]
     let labels: [String] = ["成绩查询", "考试信息", "校园攻略", "空教室查询"]
+    
+    init(){
+        getImgURL()
+    }
     var body: some View {
         NavigationView {
             VStack() {
