@@ -9,20 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab = 2
+    @State private var title = ["课表","主页","我的"]
     var body: some View {
-        TabView(selection: $selectedTab){
-            CalendarView()
-                .tabItem {
-                    Image(systemName: "calendar")
-                }.tag(1)
-            HomeView()
-                .tabItem {
-                    Image(systemName: "house")
-                }.tag(2)
-            ProfileView()
-                .tabItem {
-                    Image(systemName: "person")
-                }.tag(3)
+        NavigationView{
+            TabView(selection: $selectedTab){
+                CalendarView()
+                    .tabItem {
+                        Image(systemName: "calendar")
+                    }.tag(1)
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house")
+                    }.tag(2)
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "person")
+                    }.tag(3)
+            }
+            .navigationTitle(title[selectedTab-1])
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

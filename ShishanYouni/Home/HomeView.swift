@@ -11,7 +11,7 @@ struct HomeView: View {
     //定义常量
     let homeicons: [String] = ["score", "exam", "guide", "freeroom"]
     let labels: [String] = ["成绩查询", "考试信息", "校园攻略", "空教室查询"]
-    
+    let destinations: [String] = ["score","exam","guide","index"]
     init(){
         getImgURL()
     }
@@ -29,7 +29,7 @@ struct HomeView: View {
                 //按钮网格视图
                 LazyVGrid(columns: [GridItem(.fixed(100)), GridItem(.fixed(100)), GridItem(.fixed(100))]) {
                     ForEach(0 ..< 4) { index in
-                        ButtonView(imagename: homeicons[index], name: labels[index])
+                        ButtonView(imagename: homeicons[index], name: labels[index], destination: destinations[index])
                             .padding(.all, 10)
                             .onTapGesture {
                         }
@@ -43,7 +43,7 @@ struct HomeView: View {
                 //令VStack置顶
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
                 //设置导航栏标题
-                .navigationBarTitle("主页", displayMode: .inline)
+                //.navigationBarTitle("主页", displayMode: .inline)
         }
     }
 }
@@ -53,9 +53,10 @@ struct ButtonView: View {
     //定义传递的按钮名称、图标名
     @State var imagename: String
     @State var name: String
+    @State var destination: String
     var body: some View {
         //设定轻点后导航目标视图
-        NavigationLink(destination: HomeDetailView()) {
+        NavigationLink(destination: HomeDetailView(title: name, dest: destination)) {
             //按钮内容
             VStack {
                 Image(imagename)

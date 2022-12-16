@@ -22,7 +22,7 @@ func getImgURL(){
             imgJson2DB(json)
             
         }, onFailure: { error in
-            print(error)
+            
         })
 }
 
@@ -39,5 +39,21 @@ func getTimetable(){
             for items in arrays{
                 print(items["weekList"].arrayValue)
             }
+        })
+}
+
+//测试登陆
+func checkAccount(username: String, passwd: String){
+    let lionProvider = MoyaProvider<Lion>()
+    var status: Bool = false
+    
+    lionProvider.rx.request(.checkAccount(username: username, passwd: passwd))
+        .mapJSON()
+        .subscribe(onSuccess: { data in
+            let result = JSON(data)
+            print(result)
+            status = result["success"].rawValue as! Bool
+            print(status)
+            saveUserInfo(username: username, passwd: passwd, status: status)
         })
 }

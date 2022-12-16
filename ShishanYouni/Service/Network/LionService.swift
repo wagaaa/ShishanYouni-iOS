@@ -12,17 +12,13 @@ public enum Lion {
     case imgurl
     //  获取课表
     case timeTable
+    case checkAccount(username: String, passwd: String)
 }
 
 extension Lion: TargetType{
     //  初始URL
     public var baseURL: URL{
-        switch self {
-        case .imgurl:
-            return URL(string: "https://lion.hzau.edu.cn")!
-        case .timeTable:
-            return URL(string: "https://lion.hzau.edu.cn")!
-        }
+        return URL(string: "https://lion.hzau.edu.cn")!
     }
     //  URL路径
     public var path: String{
@@ -31,6 +27,8 @@ extension Lion: TargetType{
             return "/app/navImgs"
         case .timeTable:
             return "/app/ios/timetable"
+        case .checkAccount(_: _:):
+            return "/app/ios/bind"
         }
     }
     //  http方法
@@ -62,6 +60,12 @@ extension Lion: TargetType{
             params["type"] = "0"
             params["username"] = "12345678"
             params["year"] = "2022"
+            return .requestParameters(parameters: params, encoding: JSONEncoding.default)
+        case let .checkAccount(username, passwd):
+            var params: [String: Any] = [:]
+            params["password"] = passwd
+            params["type"] = "1"
+            params["username"] = username
             return .requestParameters(parameters: params, encoding: JSONEncoding.default)
         }
     }

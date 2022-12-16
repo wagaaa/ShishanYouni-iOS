@@ -6,23 +6,29 @@
 //
 
 import SwiftUI
+import UIKit
+
 
 struct CalendarView: View {
     var body: some View{
         NavigationView{
-            ZStack{
-                //DateBar()
-                Button {
-                    getTimetable()
-                } label: {
-                    Text("Test")
-                }
-
-            }
+            storyBoardView().edgesIgnoringSafeArea(.all)
             .navigationTitle("课表")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: AddButton())
         }
+    }
+}
+
+struct storyBoardView: UIViewControllerRepresentable{
+    func makeUIViewController(context: Context) -> some UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let controller = storyboard.instantiateViewController(withIdentifier: "TimeTable")
+        return controller
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
     }
 }
 
