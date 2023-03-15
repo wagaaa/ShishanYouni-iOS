@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab = 2
-    @State private var title = ["课表","主页","我的"]
+//    @State private var title = ["课表","主页","我的"]
     var body: some View {
         NavigationView{
             TabView(selection: $selectedTab){
-                CalendarView()
+                TimetableView()
                     .tabItem {
                         Image(systemName: "calendar")
                     }.tag(1)
@@ -26,8 +26,8 @@ struct ContentView: View {
                         Image(systemName: "person")
                     }.tag(3)
             }
-            .navigationTitle(title[selectedTab-1])
-            .navigationBarTitleDisplayMode(.inline)
+            .shadow(color: .gray, radius: 21)
+ //           .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

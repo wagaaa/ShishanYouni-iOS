@@ -22,6 +22,9 @@
 		C4225EB328D0C13D00AFA75D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EB228D0C13D00AFA75D /* AccountView.swift */; };
 		C4225EB728D0C22200AFA75D /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EB628D0C22200AFA75D /* ShareView.swift */; };
 		C4225EBE28D18A9F00AFA75D /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4225EBD28D18A9F00AFA75D /* AddGroupView.swift */; };
+		C42EEDFD29B7578700DD6C73 /* h5 in Resources */ = {isa = PBXBuildFile; fileRef = C42EEDFC29B7578700DD6C73 /* h5 */; };
+		C42EEE0129B75B9800DD6C73 /* TableSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42EEDFE29B75B9800DD6C73 /* TableSettingView.swift */; };
+		C42EEE0229B75B9800DD6C73 /* TableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42EEDFF29B75B9800DD6C73 /* TableModels.swift */; };
 		C453DFEA28F111F400AD74DF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453DFE928F111F400AD74DF /* NetworkManager.swift */; };
 		C45731FA28E877B400979990 /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = C45731F928E877B400979990 /* ActivityView */; };
 		C45C911428E31A9500EBE23E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C45C911328E31A9500EBE23E /* Alamofire */; };
@@ -31,20 +34,8 @@
 		C47168E228D32D5F00463917 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47168E128D32D5F00463917 /* CalendarView.swift */; };
 		C48AF9392934EFFB00BAF4BD /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48AF9382934EFFB00BAF4BD /* RequestModels.swift */; };
 		C4AEA92528F6E8CF00F832AC /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEA92428F6E8CF00F832AC /* DBService.swift */; };
-		C4B5BB5A290C0728002BD41D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B5BB58290C0728002BD41D /* Main.storyboard */; };
-		C4B5BB5B290C0728002BD41D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B5BB59290C0728002BD41D /* ViewController.swift */; };
 		F149706E966B3A701BE85B3D /* Pods_ShishanYouni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73341C6DFE82196B52084C4 /* Pods_ShishanYouni.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C45764EB290822DA00ED6983 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C45764E7290822D900ED6983 /* h5.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C45764E0290822D900ED6983;
-			remoteInfo = h5;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C4225EAA28D0B99500AFA75D /* Embed Watch Content */ = {
@@ -78,16 +69,16 @@
 		C4225EB228D0C13D00AFA75D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		C4225EB628D0C22200AFA75D /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		C4225EBD28D18A9F00AFA75D /* AddGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupView.swift; sourceTree = "<group>"; };
+		C42EEDFC29B7578700DD6C73 /* h5 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = h5; path = ../../h5; sourceTree = "<group>"; };
+		C42EEDFE29B75B9800DD6C73 /* TableSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSettingView.swift; sourceTree = "<group>"; };
+		C42EEDFF29B75B9800DD6C73 /* TableModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableModels.swift; sourceTree = "<group>"; };
 		C453DFE928F111F400AD74DF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		C45764E7290822D900ED6983 /* h5.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = h5.xcodeproj; path = ../../h5/h5.xcodeproj; sourceTree = "<group>"; };
 		C45C911928E3483E00EBE23E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		C45C911B28E4607A00EBE23E /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C45D3BB02907E1A300A87B42 /* HomeWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWebView.swift; sourceTree = "<group>"; };
 		C47168E128D32D5F00463917 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		C48AF9382934EFFB00BAF4BD /* RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModels.swift; sourceTree = "<group>"; };
 		C4AEA92428F6E8CF00F832AC /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
-		C4B5BB58290C0728002BD41D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C4B5BB59290C0728002BD41D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F73341C6DFE82196B52084C4 /* Pods_ShishanYouni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShishanYouni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,7 +137,7 @@
 		C4225E6928D0B99300AFA75D = {
 			isa = PBXGroup;
 			children = (
-				C45764E7290822D900ED6983 /* h5.xcodeproj */,
+				C42EEDFC29B7578700DD6C73 /* h5 */,
 				C45C911B28E4607A00EBE23E /* test.playground */,
 				C4225E7428D0B99300AFA75D /* ShishanYouni */,
 				C4225E7B28D0B99400AFA75D /* Preview Content */,
@@ -171,7 +162,7 @@
 				C4225E7528D0B99300AFA75D /* ShishanYouniApp.swift */,
 				C4225E7728D0B99300AFA75D /* ContentView.swift */,
 				C4225E7928D0B99400AFA75D /* Assets.xcassets */,
-				C43137FA28E0359E005288CB /* Calendar */,
+				C43137FA28E0359E005288CB /* TimeTable */,
 				C47168E028D32D3700463917 /* Home */,
 				C4225EB928D0C25900AFA75D /* Profile */,
 			);
@@ -207,21 +198,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		C43137FA28E0359E005288CB /* Calendar */ = {
+		C43137FA28E0359E005288CB /* TimeTable */ = {
 			isa = PBXGroup;
 			children = (
-				C4B5BB5C290C09B7002BD41D /* StoryBoard */,
+				C42EEDFF29B75B9800DD6C73 /* TableModels.swift */,
+				C42EEDFE29B75B9800DD6C73 /* TableSettingView.swift */,
 				C47168E128D32D5F00463917 /* CalendarView.swift */,
 			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
-		C45764E8290822D900ED6983 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C45764EC290822DA00ED6983 /* h5.bundle */,
-			);
-			name = Products;
+			path = TimeTable;
 			sourceTree = "<group>";
 		};
 		C47168E028D32D3700463917 /* Home */ = {
@@ -242,15 +226,6 @@
 				C40377B3293E130B00A6D764 /* Network */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		C4B5BB5C290C09B7002BD41D /* StoryBoard */ = {
-			isa = PBXGroup;
-			children = (
-				C4B5BB58290C0728002BD41D /* Main.storyboard */,
-				C4B5BB59290C0728002BD41D /* ViewController.swift */,
-			);
-			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,12 +287,6 @@
 			);
 			productRefGroup = C4225E7328D0B99300AFA75D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C45764E8290822D900ED6983 /* Products */;
-					ProjectRef = C45764E7290822D900ED6983 /* h5.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C4225E7128D0B99300AFA75D /* ShishanYouni */,
@@ -325,24 +294,14 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		C45764EC290822DA00ED6983 /* h5.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = h5.bundle;
-			remoteRef = C45764EB290822DA00ED6983 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		C4225E7028D0B99300AFA75D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4B5BB5A290C0728002BD41D /* Main.storyboard in Resources */,
 				C4225E7D28D0B99400AFA75D /* Preview Assets.xcassets in Resources */,
 				C4225E7A28D0B99400AFA75D /* Assets.xcassets in Resources */,
+				C42EEDFD29B7578700DD6C73 /* h5 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,15 +355,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47168E228D32D5F00463917 /* CalendarView.swift in Sources */,
-				C4B5BB5B290C0728002BD41D /* ViewController.swift in Sources */,
 				C4225EAF28D0BB8300AFA75D /* HomeView.swift in Sources */,
 				C40377BB293E14A500A6D764 /* LoginOK.swift in Sources */,
 				C45D3BB12907E1A300A87B42 /* HomeWebView.swift in Sources */,
 				C4225EB128D0C04700AFA75D /* ProfileView.swift in Sources */,
 				C453DFEA28F111F400AD74DF /* NetworkManager.swift in Sources */,
+				C42EEE0129B75B9800DD6C73 /* TableSettingView.swift in Sources */,
 				C48AF9392934EFFB00BAF4BD /* RequestModels.swift in Sources */,
 				C4225EB728D0C22200AFA75D /* ShareView.swift in Sources */,
 				C45C911A28E3483E00EBE23E /* AboutView.swift in Sources */,
+				C42EEE0229B75B9800DD6C73 /* TableModels.swift in Sources */,
 				C4225E7828D0B99300AFA75D /* ContentView.swift in Sources */,
 				C4AEA92528F6E8CF00F832AC /* DBService.swift in Sources */,
 				C4225E7628D0B99300AFA75D /* ShishanYouniApp.swift in Sources */,

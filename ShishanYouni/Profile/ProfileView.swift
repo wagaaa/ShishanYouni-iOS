@@ -38,7 +38,7 @@ struct ProfileView: View {
                     }
                 }
                     .listStyle(.insetGrouped)
-                    //.navigationBarTitle("我的", displayMode: .inline)
+                    .navigationBarTitle("我的", displayMode: .inline)
             }
         }
 

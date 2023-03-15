@@ -25,6 +25,10 @@ class userInfo: Object{
     }
 }
 
+protocol User{
+    
+}
+
 func saveUserInfo(username: String, passwd: String, status: Bool) {
     let realm = try! Realm()
     try! realm.write({realm.deleteAll()})

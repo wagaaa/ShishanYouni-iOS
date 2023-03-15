@@ -21,11 +21,6 @@ struct HomeView: View {
                 //顶部轮播图
                 ImageCarousel()
                     .padding(.bottom, 20)
-                //List{
-//                    RoundedRectangle(cornerRadius: 15)
-//                        .foregroundColor(.gray)
-//                        .frame(height: 220)
-//                        .padding()
                 //按钮网格视图
                 LazyVGrid(columns: [GridItem(.fixed(100)), GridItem(.fixed(100)), GridItem(.fixed(100))]) {
                     ForEach(0 ..< 4) { index in
@@ -42,8 +37,8 @@ struct HomeView: View {
             }
                 //令VStack置顶
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-                //设置导航栏标题
-                //.navigationBarTitle("主页", displayMode: .inline)
+                .navigationTitle("主页")
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
